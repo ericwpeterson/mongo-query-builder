@@ -1,3 +1,6 @@
+## Description 
+This is a tool for building complex MongoDB queries.  In my exprerience, queries that contain nested boolean logic with nested $and and $or conditions can get confusing fast.  Consider writing a mongo query for this logic ( ( ( (hasMicrowave) and (hasRefrigerator) ) or (hasKitchen) ) and ( ( (hasHotTub) or (hasJacuzzi) ) and (isInWalkingDistanceToSlopes) ) ) 
+
 
 ## Demo
 [Click here for a demo](http://ericpet.com:8080/mongo-query-builder/index.html "Title").

@@ -48,7 +48,7 @@ class ExpressionWrapper extends React.Component {
                     //to do: map the the choices to a valid mongo query
                     //for now just make a key in the mongo query for demonstration purposes
                     let e = {};
-                    e[expression[i][0]] = { $lte: 123 };
+                    e[expression[i][0]] = { $eq: true };
                     expression[i] = e;
                 }
             }

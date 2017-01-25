@@ -7,7 +7,6 @@ export const ALL_DONE = 1;
 
 let buttonDivStyle = {padding: 5, float: 'left', marginTop: -2 };
 let mainContainerStyle = { border: '1px solid #e5e3e3', borderRadius: 3, padding: 10, margin: 10, height: 65 };
-let tokenStyle = {borderRadius: 7, padding: 5, margin: 5, backgroundColor: 'lightGray', float: 'left'};
 let partialTokenDivStyle = {padding: 5, float: 'left', marginTop: 5 };
 let typeAheadDivStyle= {padding: 5, float: 'left'};
 let textAreaStyle = {border: '1px solid #e5e3e3', fontWeight: 'bold', fontSize: 13, width: '100%', height: screen.height- 315};
@@ -35,7 +34,7 @@ class ExpressionWrapper extends React.Component {
         return expressionData[index];
     }
 
-    expressionAdded( expression ) {
+    expressionAdded(expression) {
         let q;
 
         if ( !expression ) {
@@ -68,7 +67,6 @@ class ExpressionWrapper extends React.Component {
                     dataFunction={this.getItems.bind(this)}
                     buttonDivStyle={buttonDivStyle}
                     mainContainerStyle={mainContainerStyle}
-                    tokenStyle={tokenStyle}
                     partialTokenDivStyle={partialTokenDivStyle}
                     typeAheadDivStyle={typeAheadDivStyle}
                 />

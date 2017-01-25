@@ -103,9 +103,9 @@ export function buildQueryFromObject(obj) {
         }
     }
 
-    //FIXME: query type is always at obj[1] because there are we enforce rules of precedence in and/or operators
-    //all subsequent operators are ignored. For that reason we need to detect and alert the user
-    //that the query is not valid.
+    //FIXME: query type is always at obj[1] because algorithm requires parenthesis.
+    //all subsequent operators are ignored. For that reason we should detect and warn if the query expression has a mix of
+    //and/or operators
 
     if (obj[1][0] === '|') {
         key = '$or';
